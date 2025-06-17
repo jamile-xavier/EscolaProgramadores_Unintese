@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --cor-primaria-texto: #3b1270;
+  --cor-primaria-link: #5a13b4;
+  --cor-destaque: #8e35ff;
+  --cor-branco: #fff;
+
+  --cor-fundo-carreira: #3b1270;
+  --cor-caixa-busca: #5913b441;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: var(--cor-primaria-link);
+  text-decoration: none;
+}
+
+h1,
+h2,
+p {
+  color: var(--cor-primaria-texto);
+  font-weight: 400;
+}
+
+.marginSite {
+  margin: 2% 15%;
+}
+
+.displayFlex {
+  display: flex;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.gap20 {
+  gap: 20%;
+}
+
+@media screen and (max-width: 767px) {
+  .marginSite {
+    margin: 2% 5%;
+  }
+}
+/*Início Cabeçalho*/
+nav {
+  justify-content: space-between;
+}
+
+.containerGradBlog {
+  gap: 15%;
+}
+
+.inputBuscar {
+  border: none;
+}
+
+.botaoBuscar {
+  border: none;
+  background-color: var(--cor-branco);
+}
+
+.formularioBuscar {
+  border: 1.5px solid var(--cor-caixa-busca);
+  padding: 2% 5%;
+}
+
+.inputBuscar::placeholder {
+  color: var(--cor-caixa-busca);
+}
+
+.inputBuscar:focus {
+  outline: none;
+}
+
+.botaoAmbVirtual {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .flexWrap {
+    flex-wrap: wrap;
+  }
+}
+/*Fim Cabeçalho*/
+
+/*Início Apresentação*/
+.containerApresentacao {
+  margin-top: 10%;
+}
+.containerSubtitulo {
+  gap: 5%;
+  align-items: flex-end;
+  padding-top: 2%;
+}
+
+.containerSubtitulo h2 {
+  font-size: 7rem;
+}
+
+.containerSubtitulo img {
+  min-height: 260px;
+  width: auto;
+}
+
+.containerSubtitulo p {
+  max-width: 240px;
+}
+
+@media screen and (max-width: 1024px) {
+  .containerSubtitulo {
+    flex-wrap: wrap;
+  }
+
+  .containerSubtitulo h2 {
+    font-size: 4rem;
+  }
+
+  .containerSubtitulo img {
+    display: none;
+  }
+
+  .containerSubtitulo p {
+    max-width: 465px;
+    margin-top: 5%;
+  }
+}
+/*Fim Apresentação*/
+
+/*Início Escolha o seu Curso*/
+.fundoRoxo {
+  background-color: var(--cor-fundo-carreira);
+}
+
+.containerEscolhaCurso {
+  margin-top: 7%;
+}
+
+.personagemCurso {
+  position: relative;
+  top: -80px;
+}
+
+.containerCurso {
+  padding: 4.5% 0 0 2%;
+}
+
+.subtituloEscolhaCurso {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--cor-branco);
+}
+
+.containerGraduacao {
+  margin: 5% 0 10% 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 3% 2%;
+  min-width: 520px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerGraduacao span {
+  color: var(--cor-branco);
+}
+
+.botaoCurso {
+  border: none;
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+}
+
+.containerBotoesCurso {
+  align-items: center;
+  gap: 15px;
+}
+
+.tituloSoftSkill {
+  font-size: 1.2rem;
+  color: var(--cor-branco);
+  font-weight: 500;
+}
+
+.containerSoftSkills {
+  gap: 80px;
+  margin-top: 5%;
+}
+
+.nomeSoftSkill {
+  font-size: 1.1rem;
+  color: var(--cor-branco);
+}
+
+.separacaoSoftSkills {
+  margin: 7% 0;
+}
+
+@media screen and (max-width: 767px) {
+  .personagemCurso {
+    display: none;
+  }
+
+  .containerGraduacao {
+    min-width: 0;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .containerCurso {
+    padding: 4.5% 0 10%;
+  }
+
+  .botaoCurso {
+    width: 40px;
+    height: 40px;
+  }
+
+  .containerSoftSkills {
+    gap: 15px;
+  }
+}
+/*Fim Escolha seu Curso*/
+
+/*Início Botão Inscrever-se*/
+.containerBotaoInscreverSe {
+  margin: 0 15%;
+  position: relative;
+  top: -80px;
+}
+
+.botaoInscreverSe {
+  width: 100%;
+  display: block;
+  text-align: center;
+  background-color: var(--cor-destaque);
+  color: var(--cor-branco);
+  padding: 1.5% 0;
+  font-size: 2rem;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+.botaoInscreverSe:hover {
+  background-color: var(--cor-primaria-link);
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  .containerBotaoInscreverSe {
+    margin: 0;
+    top: -30px;
+  }
+}
+/*Fim Botão Inscrever-se*/
+
+/*Início Cursos Gratuitos*/
+.tituloCursosGratuitos {
+  margin-bottom: 2%;
+}
+
+@media screen and (max-width: 767px) {
+  .tituloCursosGratuitos {
+    margin-bottom: 5%;
+  }
+
+  .imgCursosGratuitos {
+    width: 100%;
+    height: auto;
+  }
+}
+/*Fim Cursos Gratuitos*/

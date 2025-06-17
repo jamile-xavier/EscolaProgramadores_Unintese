@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Site</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <!-- Dentro do Header vai o Menu de Navegação -->
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Skills</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <!-- Aqui vai o conteúdo principal do site -->
@@ -54,6 +61,38 @@
         src="img/background_mago.jpg"
         alt="Porta escondida de Moria com alguns códigos em binário e a logo da uníntese no canto esquerdo inferior"
       />
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Cidade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>João</td>
+            <td>25</td>
+            <td>São Paulo</td>
+          </tr>
+          <tr>
+            <td>Maria</td>
+            <td>30</td>
+            <td>Rio de Janeiro</td>
+          </tr>
+        </tbody>
+      </table>
+      <form action="#" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" required />
+        <label for="idade">Idade</label>
+        <input type="number" name="idade" id="idade" />
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" />
+        <label for="cidade">Cidade</label>
+        <input type="text" name="cidade" id="cidade" />
+        <button>Enviar</button>
+      </form>
     </main>
     <footer>
       <!-- Aqui vai o rodapé do site -->
