@@ -8,6 +8,8 @@
 
   --cor-fundo-carreira: #3b1270;
   --cor-caixa-busca: #5913b441;
+
+  --cor-categoria-blog: #cc7f0b;
 }
 
 * {
@@ -45,6 +47,10 @@ p {
 
 .gap20 {
   gap: 20%;
+}
+
+.corRoxoDestaque {
+  color: var(--cor-destaque);
 }
 
 @media screen and (max-width: 767px) {
@@ -87,6 +93,13 @@ nav {
   white-space: nowrap;
 }
 
+.gap40 {
+  gap: 40px;
+}
+
+.gap5 {
+  gap: 5%;
+}
 @media screen and (max-width: 1024px) {
   .flexWrap {
     flex-wrap: wrap;
@@ -205,7 +218,21 @@ nav {
 .separacaoSoftSkills {
   margin: 7% 0;
 }
+/*Tablet*/
+@media screen and (max-width: 1024px) {
+  .personagemCurso {
+    top: -35px;
+  }
 
+  .containerSoftSkills {
+    padding-bottom: 3%;
+  }
+
+  .containerSoftSkills {
+    padding-bottom: 3%;
+  }
+}
+/*Mobile*/
 @media screen and (max-width: 767px) {
   .personagemCurso {
     display: none;
@@ -255,13 +282,21 @@ nav {
   background-color: var(--cor-primaria-link);
   transition: 0.3s ease-in-out;
 }
+/*Tablet*/
+@media screen and (max-width: 1024px) {
+  .containerBotaoInscreverSe {
+    top: -16px;
+  }
+}
 
+/*Mobile*/
 @media screen and (max-width: 767px) {
   .containerBotaoInscreverSe {
     margin: 0;
     top: -30px;
   }
 }
+
 /*Fim Botão Inscrever-se*/
 
 /*Início Cursos Gratuitos*/
@@ -280,3 +315,59 @@ nav {
   }
 }
 /*Fim Cursos Gratuitos*/
+
+/*Início Blog*/
+.botaoPostBlog {
+  max-width: 340px;
+  box-shadow: 0 0 30px #0b1f4d24;
+  transition: 0.3s;
+}
+
+.botaoPostBlog > span {
+  height: 57px;
+  padding: 2.5%;
+  font-size: 1.2rem;
+  display: block;
+}
+
+.botaoPostBlog:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  color: var(--cor-destaque);
+}
+
+.containerBlog {
+  margin-top: 3%;
+}
+
+.containerInfPost {
+  justify-content: space-between;
+  padding: 0 2.5% 2.5%;
+}
+
+.textoAmarelo {
+  color: var(--cor-categoria-blog);
+  font-weight: 600;
+}
+
+.botaoPostBlog img {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .botaoPostBlog {
+    max-width: 330px;
+  }
+}
+/*Fim Blog*/
+
+/*Início Rodapé*/
+.containerRodape {
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  padding: 12% 10% 5%;
+  background-color: #ded0f14a;
+}
+
+/*Fim Rodapé*/
