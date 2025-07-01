@@ -5,18 +5,42 @@
 }
 
 :root {
-  font-size: 62, 5%;
+  font-size: 62.5%;
   --font-family: "Montserrat", sans-serif;
+  --color-primary: #0c0d0d;
+  --color-h1: #0d4859;
+  --color-h2: #073846;
+  --color-h3: #032c37;
+  --bg-primary: #aec3c9;
+  --bg-secondary: #759ea9;
+  --bg-tertiary: #266b7f;
+  --bg-body: #c3d4d9;
+}
+
+body {
+  background-color: var(--bg-body);
+  color: var(--color-primary);
+  font-size: 1.6rem;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: var(--color-h1);
+  font-size: 2.4rem;
 }
 
 h2 {
   font-size: 1.4rem;
   margin: 1rem;
+  color: var(--color-h2);
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   margin: 1rem;
+  color: var(--color-h3);
 }
 
 p,
@@ -29,19 +53,16 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem 16px;
+  padding: 0.5rem;
+  background-color: var(--bg-primary);
 }
 
 .logo > img {
   width: 6rem;
 }
 
-.menu {
+.menu-desktop {
   display: none;
-}
-
-.sobre-mim > h1 {
-  text-align: center;
 }
 
 .img-profile {
@@ -52,7 +73,9 @@ li {
 
 .img-profile img {
   width: 15rem;
-  border-radius: 50%;
+  height: 15rem;
+  border-radius: 100%;
+  border: 5px solid var(--bg-primary);
 }
 
 .hard-skill,
@@ -94,16 +117,97 @@ li {
 
 .cards a {
   text-decoration: none;
-  border: 2px solid green;
   padding: 5px;
   border-radius: 6px;
+  background-color: var(--bg-secondary);
+  color: #0c0d0d;
+  padding: 0.5rem;
 }
 
 .card-projeto {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid blue;
   margin: 2rem;
   padding: 1rem;
+  background-color: var(--bg-primary);
+  border-radius: 1rem;
+}
+
+.card-projeto a:hover {
+  background-color: #266b7f;
+}
+
+footer {
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+}
+
+footer img {
+  width: 2rem;
+}
+
+footer p {
+  text-align: center;
+}
+
+.redes-sociais {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.redes-sociais a {
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.linkedin,
+.github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .areas-estudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  p,
+  ul,
+  li {
+    margin: 2rem;
+  }
+
+  .img-profile img {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  li img {
+    width: 5rem;
+    height: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    max-width: 1024px;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
 }

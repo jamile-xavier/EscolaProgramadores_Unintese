@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio Jamile Xavier</title>
+    <link
+      rel="shortcut icon"
+      href="./img/bug_report_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +23,7 @@
         <div class="logo">
           <img src="./img/Logo Jamile.svg" alt="Logomarca com nome Jamile" />
         </div>
-        <div class="menu">
+        <div class="menu-desktop">
           <a href="">Sobre</a>
           <a href="">Habilidades</a>
           <a href="">Projetos</a>
@@ -31,25 +36,34 @@
     </header>
     <main>
       <section class="sobre">
+        <h1>Jamile Xavier Mendonça</h1>
         <div class="sobre-mim">
-          <h1>Jamile Xavier Mendonça</h1>
-          <h2>Sobre</h2>
-          <p>Graduanda em Análise e Desenvolvimento de Sistemas.</p>
-          <p>Pós graduanda em Engenharia de Software com Ênfase em Qualidade</p>
-          <p>Bacharela em Administração</p>
+          <div class="texto">
+            <h2>Sobre</h2>
+            <p>Graduanda em Análise e Desenvolvimento de Sistemas.</p>
+            <p>
+              Pós graduanda em Engenharia de Software com Ênfase em Qualidade.
+            </p>
+            <p>Bacharela em Administração de Empresas.</p>
+          </div>
+          <div class="img-profile">
+            <img src="img/foto-jamile.png" alt="Foto Jamile " />
+          </div>
         </div>
-        <div class="img-profile">
-          <img src="img/foto-jamile.jpg" alt="Foto Jamile, " />
-        </div>
+
         <div class="areas-estudo">
-          <h3>Quality Assurance</h3>
-          <p>
-            Estudante de Quality Assurance com conhecimento em gerenciamento de
-            projetos através do Azure DevOps, testes funcionais (web e api -
-            Postman) e testes automatizados (Robot Framework e Selenium).
-          </p>
-          <h3>Desenvolvimento Web</h3>
-          <p>Estudante de Desenvolvimento Web (Html, CSS e JavaScript).</p>
+          <div class="qa">
+            <h3>Quality Assurance</h3>
+            <p>
+              Estudante de Quality Assurance com conhecimento em gerenciamento
+              de projetos através do Azure DevOps, testes funcionais (web e api
+              - Postman) e testes automatizados (Robot Framework e Selenium).
+            </p>
+          </div>
+          <div class="dev">
+            <h3>Desenvolvimento Web</h3>
+            <p>Estudante de Desenvolvimento Web (Html, CSS e JavaScript).</p>
+          </div>
         </div>
       </section>
       <section class="habilidades">
@@ -163,46 +177,65 @@
           </div>
         </div>
       </section>
-      <section class="Projetos">
+      <section class="projetos">
         <h2>Projetos</h2>
         <div class="cards">
           <div class="card-projeto">
-            <img src="./img/teste.png" alt="" />
-            <h3>Teste de API com Postman ERP Academy T13</h3>
-            <p>Testes de endpoints: Login, Users e Company</p>
-            <a href="https://github.com/jamile-xavier/QualityEaglesT13_Postman"
-              >Acessar</a
+            <img
+              src="./img/ServeRest.png"
+              alt="Imagem de um relatório gerado como resultado dos testes da API"
+            />
+            <h3>Teste de API com Postman - ServeRest</h3>
+            <p>ServeRest é uma API gratuita que simula uma loja virtual.</p>
+            <p>Endpoints testados: Login, Usuários, Produtos e Carrinhos.</p>
+            <a href="https://github.com/jamile-xavier/ServerRest-Postman"
+              >Acessar o Github</a
             >
           </div>
           <div class="card-projeto">
-            <img src="./img/teste.png" alt="" />
-            <h3>Teste de API com Postman ERP Academy T13</h3>
-            <p>Testes de endpoints: Login, Users e Company</p>
-            <a href="https://github.com/jamile-xavier/QualityEaglesT13_Postman"
-              >Acessar</a
+            <img src="./img/RobotBack.png" alt="" />
+            <h3>
+              Teste de Automação de API com Robot Framework - ERP Academy T13
+            </h3>
+            <p>
+              ERP Academy foi disponibilizadop para teste como parte prática do
+              curso de Quality Assurance.
+            </p>
+            <p>Endpoints Testados: Login, Users e Company</p>
+            <a
+              href="https://github.com/jamile-xavier/QualityEaglesT13_Robot-API"
+              >Acessar o Github</a
             >
           </div>
           <div class="card-projeto">
-            <img src="./img/teste.png" alt="" />
-            <h3>Teste de API com Postman ERP Academy T13</h3>
-            <p>Testes de endpoints: Login, Users e Company</p>
+            <img src="./img/RobotFront.png" alt="" />
+            <h3>
+              Teste de Automação Web com Robot Framework - ERP Academy T13
+            </h3>
+            <p>
+              ERP Academy foi disponibilizadop para teste como parte prática do
+              curso de Quality Assurance.
+            </p>
+            <p>Endpoints testados: Login, Users, Client e Company</p>
             <a href="https://github.com/jamile-xavier/QualityEaglesT13_Postman"
-              >Acessar</a
+              >Acessar o Github</a
             >
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <div class="linkedin">
-        <img src="./img/linkedin-icon-2.svg" alt="Ícone do Linkedin" />
-        <a href="https://www.linkedin.com/in/jamile-xavier/">LinkedIn</a>
+      <div class="redes-sociais">
+        <div class="linkedin">
+          <img src="./img/linkedin-icon-2.svg" alt="Ícone do Linkedin" />
+          <a href="https://www.linkedin.com/in/jamile-xavier/">LinkedIn</a>
+        </div>
+        <div class="github">
+          <img src="./img/github-icon-1.svg" alt="Ícone do Github" />
+          <a href="https://github.com/jamile-xavier/">Github</a>
+        </div>
       </div>
-      <div class="github">
-        <img src="./img/github-icon-1.svg" alt="Ícone do Github" />
-        <a href="https://github.com/jamile-xavier/">Github</a>
-      </div>
-      Jamile 2025
+      <p>Jamile 2025</p>
     </footer>
   </body>
 </html>
