@@ -58,7 +58,7 @@ li {
 }
 
 .logo > img {
-  width: 6rem;
+  width: 10rem;
 }
 
 .menu-desktop {
@@ -76,6 +76,20 @@ li {
   height: 15rem;
   border-radius: 100%;
   border: 5px solid var(--bg-primary);
+}
+
+.menu-mobile img {
+  width: 3rem;
+}
+
+.texto p {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.texto img {
+  color: #0d7f18;
 }
 
 .hard-skill,
@@ -195,19 +209,73 @@ footer p {
     width: 5rem;
     height: 2.5rem;
   }
+
+  .menu-mobile {
+    display: none;
+  }
+
+  .menu-desktop {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .menu-desktop a {
+    text-decoration: none;
+    color: var(--color-primary);
+  }
 }
 
 @media screen and (min-width: 1024px) {
-  main {
-    max-width: 1024px;
-  }
   h1 {
-    font-size: 3rem;
+    font-size: 6rem;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
   h3 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem;
+    margin: 0 auto;
+    max-width: 1024px;
+  }
+
+  .logo > img {
+    width: 20rem;
+  }
+
+  .menu-desktop a {
+    font-size: 3rem 30px;
+  }
+  .sobre {
+    gap: 5rem;
+    margin-top: 6rem;
+  }
+
+  .sobre-mim {
+    gap: rem;
+  }
+}
+
+.sobre {
+  display: grid;
+  justify-content: space-around;
+
+  display: flex;
+
+  align-content: space-around;
+  align-items: center;
+}
+
+.sobre-mim {
+  display: flex;
+}
+
+.areas-estudo {
+  display: flex;
+  flex-direction: column;
 }
