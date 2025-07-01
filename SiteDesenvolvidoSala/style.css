@@ -6,10 +6,10 @@
   --cor-destaque: #8e35ff;
   --cor-branco: #fff;
 
-  --cor-fundo-carreira: #3b1270;
+  --cor-fundo-carreira: #360b6c;
   --cor-caixa-busca: #5913b441;
 
-  --cor-categoria-blog: #cc7f0b;
+  --cor-categoria-blog: #794b07;
 }
 
 * {
@@ -33,6 +33,20 @@ p {
   font-weight: 400;
 }
 
+h1 {
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
 .marginSite {
   margin: 2% 15%;
 }
@@ -54,6 +68,10 @@ p {
 }
 
 @media screen and (max-width: 767px) {
+  h1 {
+    font-size: 1rem;
+  }
+
   .marginSite {
     margin: 2% 5%;
   }
@@ -76,9 +94,17 @@ nav {
   background-color: var(--cor-branco);
 }
 
+.botaoBuscar img {
+  width: 20px;
+  height: auto;
+}
+
 .formularioBuscar {
   border: 1.5px solid var(--cor-caixa-busca);
-  padding: 2% 5%;
+  padding: 2%;
+  width: 22vw;
+  height: auto;
+  justify-content: space-between;
 }
 
 .inputBuscar::placeholder {
@@ -101,8 +127,42 @@ nav {
   gap: 5%;
 }
 @media screen and (max-width: 1024px) {
+  nav {
+    justify-content: center;
+    gap: 15px;
+  }
+
   .flexWrap {
     flex-wrap: wrap;
+  }
+
+  .containerGradBlog a,
+  .botaoAmbVirtual {
+    font-size: 1.3rem;
+  }
+
+  .containerAmbVirEBusc {
+    gap: 15px;
+    flex-direction: column-reverse;
+  }
+
+  .formularioBuscar {
+    width: 40vw;
+  }
+
+  .inputBuscar::placeholder {
+    font-size: 1.2rem;
+  }
+
+  .botaoBuscar img {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .formularioBuscar {
+    width: 100%;
+    justify-content: space-between;
   }
 }
 /*Fim Cabeçalho*/
@@ -148,6 +208,12 @@ nav {
     margin-top: 5%;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .containerSubtitulo h2 {
+    font-size: 2.5rem;
+  }
+}
 /*Fim Apresentação*/
 
 /*Início Escolha o seu Curso*/
@@ -176,7 +242,7 @@ nav {
 
 .containerGraduacao {
   margin: 5% 0 10% 0;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgb(255 255 255 / 25%);
   padding: 3% 2%;
   min-width: 520px;
   justify-content: space-between;
@@ -218,6 +284,10 @@ nav {
 .separacaoSoftSkills {
   margin: 7% 0;
 }
+
+.gap5Px {
+  gap: 5px;
+}
 /*Tablet*/
 @media screen and (max-width: 1024px) {
   .personagemCurso {
@@ -242,10 +312,16 @@ nav {
     min-width: 0;
     flex-wrap: wrap;
     text-align: center;
+    justify-content: center;
+    gap: 10px;
   }
 
   .containerCurso {
     padding: 4.5% 0 10%;
+  }
+
+  .subtituloEscolhaCurso {
+    font-size: 1.5rem;
   }
 
   .botaoCurso {
@@ -318,7 +394,7 @@ nav {
 
 /*Início Blog*/
 .botaoPostBlog {
-  max-width: 340px;
+  width: 340px;
   box-shadow: 0 0 30px #0b1f4d24;
   transition: 0.3s;
 }
@@ -368,6 +444,23 @@ nav {
   margin-top: 5%;
   padding: 12% 10% 5%;
   background-color: #ded0f14a;
+}
+
+.containerRodape > div {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.gap15 {
+  gap: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .gap5 {
+    gap: 25px;
+  }
 }
 
 /*Fim Rodapé*/
