@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js" type="module" defer></script>
   </head>
   <body>
     <header>
@@ -24,19 +25,27 @@
           <img src="./img/Logo Jamile.svg" alt="Logomarca com nome Jamile" />
         </div>
         <div class="menu-desktop">
-          <a href="">Sobre</a>
-          <a href="">Habilidades</a>
-          <a href="">Projetos</a>
-          <a href="">Contatos</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contatos">Contatos</a>
         </div>
         <div class="menu-mobile">
           <img src="./img/menu_hamburguer.svg" alt="Menu de opções" />
         </div>
+         <div class="menu-mobile-opcoes">
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contatos">Contatos</a></li>
+        </ul>
+    </div>
       </nav>
     </header>
     <main>
       <h1>Jamile Xavier Mendonça</h1>
-      <section class="sobre">
+      <section class="sobre id="sobre">
         <div class="sobre-mim">
           <div class="texto">
             <h2>Sobre</h2>
@@ -80,7 +89,7 @@
           </div>
         </div>
       </section>
-      <section class="habilidades">
+      <section class="habilidades" id="habilidades">
         <h2>Habilidades</h2>
         <div class="divisao-habilidades">
           <div class="hard-skill">
@@ -191,7 +200,7 @@
           </div>
         </div>
       </section>
-      <section class="projetos">
+      <section class="projetos" id="projetos">
         <h2>Projetos</h2>
         <div class="cards">
           <div class="card-projeto">
@@ -239,7 +248,7 @@
       </section>
     </main>
     <footer>
-      <div class="redes-sociais">
+      <div class="redes-sociais" id="contatos">
         <div class="linkedin">
           <img src="./img/linkedin-icon-2.svg" alt="Ícone do Linkedin" />
           <a href="https://www.linkedin.com/in/jamile-xavier/">LinkedIn</a>
