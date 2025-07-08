@@ -187,6 +187,7 @@ li {
 
 .card-projeto:hover {
   background-color: #266b7f;
+  transition: all 0.3s ease;
 }
 
 footer {
